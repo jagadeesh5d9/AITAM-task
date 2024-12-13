@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <div>
+        <h1>Task</h1>
+        <form>
+            <fieldset>
+                <legend><h3>Registration Form</h3></legend><br>
+                <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name.."><br><br>
+            <label for="age">Age: </label>
+            <input type="number" name="" id="age" placeholder="Enter your age.."><br><br>
+            
+            <label for="">Gender:</label><br>
+            <label>
+                <input type="radio" name="color" value="male"> Male
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="color" value="female"> Female
+              </label>
+              <br><br>
+
+              <label for="lan">Place:</label>
+                <select>
+                    <option value="">NorthIndia</option>
+                    <option value="">SouthIndia</option>
+                    <option value="">Other</option>
+                </select>
+
+                <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email" placeholder="Enter your name.."><br><br>
+            <label for="pas">Password:</label>
+            <input type="password" name="pas" id="pas" placeholder="Enter your password.."><br><br>
+            <label for="pass">Cofirm password:</label>
+            <input type="text" name="pass" id="pass" placeholder="Enter your password again.."><br><br>
+                <input type="submit" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend><h3>Preferences</h3></legend>
+                <label for=""><h4>Languages Known:</h4></label>
+              <input type="checkbox" name="len">English
+              <input type="checkbox" name="len">Hindi <br><br>
+              <input type="checkbox" name="len">Telugu
+              <input type="checkbox" name="len">Tamil
+              <br><br>
+              <label for=""><h4>Additional Details</h4></label>
+              <textarea name="" id="" rows="5" cols="40" placeholder="1/200.."></textarea>
+            </fieldset>
+
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend><h3>Feedback</h3></legend>
+              <label for=""><h4>Feedback</h4></label>
+              <textarea name="" id="" rows="10" cols="80" placeholder="1/200.."></textarea>
+            <br><br>
+            <label for=""><h4>Rate us:</h4></label>
+            <input type="range"><br><br>
+              <input type="submit" value="Register">
+              <input type="submit" value="Reset">
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+</html>

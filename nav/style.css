@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: url('https://wallpapers.com/images/hd/dark-background-b59iy2towqy5yrgb.jpg') no-repeat center ;
+    background-size:cover ;
+    padding: 30px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px;
+    /* opacity: 0.6; */
+}
+
+h2{
+    font-size: 220%;
+}
+.container .contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 2em;
+    background-color: coral;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 130%;
+}
+
+li:hover{
+    opacity: 1;
+}
+
+#div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#div h1{
+    text-transform: capitalize;
+    font-size: 90px;
+}
+
+button{
+    background-color: coral;
+    color: white;
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    margin-left: 5%;
+}
+

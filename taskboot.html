@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px; /* Space between images */
+      justify-content: center; /* Center the images */
+      padding: 16px;
+      overflow-x: scroll;
+    }
+
+    .gallery img {
+      width: calc(25% - 16px); /* Four images per row with spacing */
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery img:hover {
+      opacity: 0.7; /* Hover effect */
+    }
+
+    @media (max-width: 900px) {
+      .gallery img {
+        width: 100%; /* Stack images vertically */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://t4.ftcdn.net/jpg/05/49/86/39/360_F_549863991_6yPKI08MG7JiZX83tMHlhDtd6XLFAMce.jpg" alt="Image 1">
+    <img src="https://plus.unsplash.com/premium_photo-1681426327290-1ec5fb4d3dd8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29vbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D" alt="Image 3">
+    <img src="https://t4.ftcdn.net/jpg/07/87/16/69/360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg" alt="Image 2">
+    <img src="https://t4.ftcdn.net/jpg/08/64/02/41/360_F_864024179_SKQYdW5rrnNCzN63bfilsmgCGxLx2yzp.jpg" alt="Image 4">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWKkXuRpZKV2Mmar96T5tk5jcVbWeHHxWn2w&sg" alt="Image 5">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/037/814/719/small_2x/ai-generated-autumn-leaves-in-the-forest-nature-background-photo.jpg" alt="Image 6">
+    <img src="https://ak.picdn.net/shutterstock/videos/1111470671/thumb/12.jpg" alt="Image 7">
+    <img src="./pexels-pixabay-206359.jpg" alt="Image 8">
+  </div>
+</body>
+</html>
